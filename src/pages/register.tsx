@@ -33,7 +33,7 @@ export default function Register() {
     email: "",
     password: "",
     phone: "",
-    dob: dobValue, // Date of Birth
+    dob: "", // Date of Birth
     hobby: "",
   });
 
@@ -168,12 +168,12 @@ export default function Register() {
 
               {/* Input: Date of Birth */}
               <Field label="Date of Birth">
-                <DatePicker
+                {/* <DatePicker
                   onChange={setDobValue}
                   value={dobValue}
                   className={"p-1 border-2 border-solid border-slate-300"}
-                />
-                {/* <Input
+                /> */}
+                <Input
                   padding="0.5rem"
                   value={payload.dob}
                   onChange={(event) =>
@@ -182,7 +182,7 @@ export default function Register() {
                   name="dob"
                   type="text"
                   className="border-2 border-solid border-slate-300"
-                /> */}
+                />
               </Field>
             </Fieldset.Content>
 
